@@ -1,0 +1,37 @@
+{
+  "name": "web-starter-kit",
+  "version": "1.0.0",
+  "description": "Starting point for web projects",
+  "dependencies": {
+    "chart.js": "^2.6.0",
+    "gulp-install": "^0.6.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "matter-js": "^0.13.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-csslint-report": "^2.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "postcss-focus": "^1.0.0",
+    "postcss-style-guide": "^0.14.0",
+    "psg-theme-tomato": "^1.0.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files './*.*'"
+  },
+  "author": "ralph",
+  "license": "ISC"
+}
