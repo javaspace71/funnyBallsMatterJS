@@ -55,7 +55,64 @@
     </div> -->
 
 
-        
-    <script src="./dist/js/scripts.min.js"></script>
+
+
+<script src="./dist/js/scripts.min.js"></script>
+    <!-- <style>
+  canvas{ background-color:#069;}
+</style>
+
+<canvas id="c" width="512" height="312"></canvas>
+
+<script>
+var stage = new createjs.Stage("c");
+
+var circle1 = new createjs.Shape();
+circle1.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 25);
+circle1.x = 220;
+circle1.y = 100;
+circle1.dynamic = true;
+
+var wall1 = new createjs.Shape();
+wall1.graphics.beginFill("green").drawRect(0,0, 50, 50);
+wall1.x = 130;
+wall1.y = 20;
+wall1.dynamic = true;
+
+var wall = new createjs.Shape();
+wall.graphics.beginFill("red").drawRect(0,0, 200, 20);
+wall.x = 220;
+wall.y = 230;
+
+var wall2 = new createjs.Shape();
+wall2.graphics.beginFill("blue").drawRect(0,0,20, 60);
+wall2.x = 330;
+wall2.y = 210;
+stage.addChild(wall, wall1, wall2, circle1);
+
+window.requestAnimationFrame(render);
+function render(dt)
+{
+  window.requestAnimationFrame(render);
+  stage.update();
+}
+
+// se llama cuando existe una collision en el mundo
+stage.OnCollisionEnter = function(actor)
+{
+  if(wall1.id == actor.id)
+  {
+    wall1.alpha = 0.1;
+  }
+};
+
+Jump();
+function Jump()
+{
+  Matter.Body.applyForce(circle1.body, {x:circle1.body.position.x, y:circle1.body.position.y}, {x:0.002, y:-0.05});
+  setTimeout(Jump, 2000);
+}
+</script> -->
+    
   </body>
 </html>
